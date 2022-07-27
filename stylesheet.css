@@ -1,208 +1,229 @@
-* {
-  box-sizing: border-box;
+/* VARIABLE */
+:root {
+  --nav-height: 60px;
+  --theme-font: 'Roboto Condensed',
+    sans-serif;
+  --theme-color-primary: rgb(17 20 62);
+  --theme-color-secondary: rgb(45, 49, 250);
+  --theme-color-tertiary: rgb(93, 139, 244);
+  --theme-color-quaternary: rgb(223, 246, 255);
+  --theme-color-quinary: rgb(227 227 227);
 }
 
+/* === GLOBAL STYLE START === */
 body {
   margin: 0;
-  font-family: "Lucida Grande";
+  font-family: var(--theme-font);
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+ol li {
+  list-style: none;
 }
 
 a {
   text-decoration: none;
 }
 
-.clear {
-  clear: left;
+.navigation-container,
+.section-container {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
 }
 
-.container {
-  max-width: 1170px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
+.section-container {
+  padding-top: var(--nav-height);
+  height: 100vh;
 }
 
-.top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
-  background-size: cover;
-  color: white;
-  text-align: center;
+/* === GLOBAL STYLE END === */
+
+/* === ANIMATION STYLE START === */
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
 }
 
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: white;
+  }
 }
 
-.top-wrapper p {
-  opacity: 0.7;
-  margin-bottom: 3px;
-}
+/* === ANIMATION STYLE END === */
 
-.btn-wrapper {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.btn-wrapper p {
-  margin: 10px 0;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn {
-  padding: 12px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
-}
-
+/*
+  === HEADER / TOP NAV START ===
+  fixed size: 60px
+  because this element is fixed 
+  make sure all element (.section-container) have equal margin top with this element
+*/
 header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  position :fixed;
+  height: calc(var(--nav-height) - 1px);
+  position: fixed;
   top: 0;
-  z-index: 10;
-}
-
-.logo {
-  width: 124px;
-  margin-top: 20px;
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-/* Tambahkan CSS untuk menu-icon */
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  /* Gantikan property display ke none */
-  display:  none;
-}
-
-
-.lesson-wrapper {
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
-}
-
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
-}
-
-.heading h2 {
-  font-weight: normal;
-}
-
-.lesson {
-  float: left;
-  width: 25%;
-}
-
-.lesson-icon {
-  position: relative;
-}
-
-.lesson-icon p {
-  position: absolute;
-  top: 44%;
   width: 100%;
-  color: white;
+  color: var(--theme-color-primary);
+  border-bottom: 1px dashed var(--theme-color-primary);
 }
 
-.text-contents {
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(227 227 227 / 50%);
+}
+
+.navigation-container .left-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-container .left-navigation .title {
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.navigation-container .left-navigation .title h1,
+.navigation-container .left-navigation .title h2 {
+  margin: 0;
+}
+
+.navigation-container .left-navigation h1 {
+  font-size: 20px;
+}
+
+.navigation-container .left-navigation h2 {
+  font-size: 14px;
+}
+
+.navigation-container .left-navigation img {
+  height: 50px;
+  padding: 5px 0;
+}
+
+.navigation-container .right-navigation ol {
+  display: flex;
+  gap: 0 40px;
+  height: 100%;
+}
+
+.navigation-container .right-navigation ol li {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.navigation-container .right-navigation ol li a {
+  color: inherit;
+}
+
+/* === HEADER / TOP NAV END === */
+
+/* === HERO SECTION START ===*/
+#hero {
+  background-image: url("/asset/golang_a02_lightgray_color.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  display: flex;
+}
+
+#hero section {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 160px;
+}
+
+#hero section .terminal {
   width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 15px;
-  color: #b3aeb5;
+  height: 50%;
 }
 
-.heading h3 {
-  font-weight: normal;
+#hero section.left-hero .command-control {
+  display: flex;
+  justify-content: space-between;
+  background-color: #161718;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px 4px 0 0;
 }
 
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
+.close-button {
+  color: red
 }
 
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0 7px #1a7940;
+#hero section.left-hero .command-line-box {
+  height: calc(100% - 27px);
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  border-radius: 0 0 4px 4px;
+  background-color: #202124;
+  box-shadow: inset 20px 20px 60px #1b1c1f,
+    inset -20px -20px 60px #252629;
 }
 
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
+#hero section.left-hero .command-line-box .command-line {
+  display: flex;
+  padding: 20px 10px;
+  color: white;
+  background-color: #202124;
 }
 
-footer img {
-  width: 125px;
+#hero section.left-hero .command-line-box .command-line p {
+  margin: 0 0 auto 0;
 }
 
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
+#hero section.left-hero .command-line-box .command-line p:nth-child(1) {
+  padding-right: 8px;
+  color: orange
 }
 
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
+#hero section.left-hero .command-line-box .command-input {
+  overflow: hidden;
+  border-right: 0.35em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .1em;
+  animation: typing 4.5s steps(40, end), blink-caret .75s step-end infinite;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
 }
+
+#hero section.right-hero {
+  padding-left: 40px;
+  color: var(--theme-color-primary);
+}
+
+#hero section.right-hero h1 {
+  font-size: 76px;
+  margin-bottom: 0;
+}
+
+#hero section.right-hero p {
+  margin-top: 0;
+  font-size: 36px;
+}
+
+/* === HERO SECTION END ===*/
