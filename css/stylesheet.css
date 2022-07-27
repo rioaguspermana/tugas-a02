@@ -127,10 +127,14 @@ header {
   display: none;
 }
 
+.navigation-container .right-navigation {
+  height: 100%;
+}
+
 .navigation-container .right-navigation ol {
+  height: inherit;
   display: flex;
   gap: 0 40px;
-  height: 100%;
 }
 
 .navigation-container .right-navigation ol li {
