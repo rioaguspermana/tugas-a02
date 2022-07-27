@@ -1,0 +1,25 @@
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  /* === GLOBAL STYLE START === */
+
+  /* === GLOBAL STYLE END === */
+
+  /* === HERO SECTION START ===*/
+  #hero {
+    background-position: center center;
+  }
+
+  #hero section.left-hero .command-line-box .command-line {
+    font-size: 12px;
+  }
+
+  #hero section.right-hero h1 {
+    font-size: 50px;
+  }
+
+  #hero section.right-hero p {
+    font-size: 24px;
+  }
+
+  /* === HERO SECTION END ===*/
+}

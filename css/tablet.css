@@ -1,0 +1,35 @@
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  /* === GLOBAL STYLE START === */
+
+  .section-container {
+    height: auto;
+  }
+
+  /* === GLOBAL STYLE END === */
+
+  /* === HERO SECTION START ===*/
+  #hero {
+    flex-direction: column-reverse;
+  }
+
+  #hero section.left-hero .command-line-box .command-line {
+    font-size: 12px;
+  }
+
+  #hero section.right-hero {
+    margin-top: 80px;
+    padding: 0 40px;
+    text-align: center;
+  }
+
+  #hero section.right-hero h1 {
+    font-size: 50px;
+  }
+
+  #hero section.right-hero p {
+    font-size: 24px;
+  }
+
+  /* === HERO SECTION END ===*/
+}

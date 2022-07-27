@@ -140,7 +140,7 @@ header {
 
 /* === HERO SECTION START ===*/
 #hero {
-  background-image: url("/asset/golang_a02_lightgray_color.svg");
+  background-image: url("/image/golang_a02_lightgray_color.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right center;

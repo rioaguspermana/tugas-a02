@@ -1,0 +1,55 @@
+/*
+  X-Small devices (portrait phones, less than 576px)
+  Small devices (landscape phones, less than 768px) 
+*/
+@media (max-width: 767.98px) {
+  /* === GLOBAL STYLE START === */
+
+  .section-container {
+    height: auto;
+  }
+
+  /* === GLOBAL STYLE END === */
+
+  /* === HEADER / TOP NAV START === */
+  .navigation-container .right-navigation {
+    display: none;
+  }
+
+  /* === HEADER / TOP NAV END === */
+
+  /* === HERO SECTION START ===*/
+  #hero {
+    flex-direction: column-reverse;
+  }
+
+  #hero section {
+    margin-bottom: 60px;
+  }
+
+  #hero section .terminal {
+    width: 100%;
+  }
+
+  #hero section.left-hero .command-line-box {
+    height: 100px;
+  }
+
+  #hero section.left-hero .command-line-box .command-line {
+    font-size: 10px;
+  }
+
+  #hero section.right-hero {
+    margin-top: 80px;
+  }
+
+  #hero section.right-hero h1 {
+    font-size: 36px;
+  }
+
+  #hero section.right-hero p {
+    font-size: 18px;
+  }
+
+  /* === HERO SECTION END ===*/
+}
