@@ -170,14 +170,19 @@ header {
   border-radius: 4px 4px 0 0;
 }
 
-.close-button {
-  color: red
+.command-control-action {
+  display: flex;
+}
+
+.command-control-action div {
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
 }
 
 #hero section.left-hero .command-line-box {
   height: calc(100% - 27px);
   font-family: 'Courier New', Courier, monospace;
-  display: flex;
   border-radius: 0 0 4px 4px;
   background-color: #202124;
   box-shadow: inset 20px 20px 60px #1b1c1f,
@@ -185,7 +190,7 @@ header {
 }
 
 #hero section.left-hero .command-line-box .command-line {
-  display: flex;
+  display: inline-flex;
   padding: 20px 10px;
   color: white;
   background-color: #202124;
@@ -209,6 +214,10 @@ header {
   animation: typing 4.5s steps(40, end), blink-caret .75s step-end infinite;
   animation-delay: 1s;
   animation-iteration-count: infinite;
+}
+
+#hero section.left-hero .command-line-box .command-input span {
+  color: gray;
 }
 
 #hero section.right-hero {
