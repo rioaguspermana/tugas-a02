@@ -18,6 +18,10 @@
   }
 
   #hero section.right-hero {
+    align-items: center;
+  }
+
+  #hero section.right-hero {
     margin-top: 80px;
     padding: 0 40px;
     text-align: center;
@@ -29,6 +33,10 @@
 
   #hero section.right-hero p {
     font-size: 24px;
+  }
+
+  #hero section.right-hero .action-button {
+    margin-bottom: 20px;
   }
 
   /* === HERO SECTION END ===*/

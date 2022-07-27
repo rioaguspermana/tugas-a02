@@ -45,6 +45,7 @@ a {
 /* === GLOBAL STYLE END === */
 
 /* === ANIMATION STYLE START === */
+
 /* The typing effect */
 @keyframes typing {
   from {
@@ -87,7 +88,9 @@ header {
 }
 
 .navigation-container {
+  height: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background-color: rgb(227 227 227 / 50%);
 }
@@ -120,6 +123,10 @@ header {
   padding: 5px 0;
 }
 
+.menu-mobile-navigation {
+  display: none;
+}
+
 .navigation-container .right-navigation ol {
   display: flex;
   gap: 0 40px;
@@ -127,12 +134,22 @@ header {
 }
 
 .navigation-container .right-navigation ol li {
+  height: inherit;
   display: flex;
   align-items: center;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.navigation-container .right-navigation ol li:hover {
+  box-sizing: border-box;
+  border-bottom: 3px solid var(--theme-color-primary);
 }
 
 .navigation-container .right-navigation ol li a {
+  height: inherit;
+  display: flex;
+  align-items: center;
   color: inherit;
 }
 
@@ -223,6 +240,7 @@ header {
 #hero section.right-hero {
   padding-left: 40px;
   color: var(--theme-color-primary);
+  align-items: flex-start;
 }
 
 #hero section.right-hero h1 {
@@ -231,8 +249,18 @@ header {
 }
 
 #hero section.right-hero p {
-  margin-top: 0;
   font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#hero section.right-hero .action-button {
+  color: var(--theme-color-);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px dashed var(--theme-color-primary);
+  background-color: var(--theme-color-quaternary);
+  margin-bottom: 70px;
 }
 
 /* === HERO SECTION END ===*/
