@@ -217,8 +217,8 @@ header {
 #hero section.left-hero .command-line-box .command-line {
   display: inline-flex;
   padding: 20px 10px;
+  font-weight: bold;
   color: white;
-  background-color: #202124;
 }
 
 #hero section.left-hero .command-line-box .command-line p {
