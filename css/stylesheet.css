@@ -209,9 +209,7 @@ header {
   height: calc(100% - 27px);
   font-family: 'Courier New', Courier, monospace;
   border-radius: 0 0 4px 4px;
-  background-color: #202124;
-  box-shadow: inset 20px 20px 60px #1b1c1f,
-    inset -20px -20px 60px #252629;
+  background-color: black;
 }
 
 #hero section.left-hero .command-line-box .command-line {
