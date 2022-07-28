@@ -94,6 +94,7 @@ header {
   width: 100%;
   color: var(--theme-color-primary);
   border-bottom: 1px dashed var(--theme-color-primary);
+  z-index: 100;
 }
 
 .navigation-container {
