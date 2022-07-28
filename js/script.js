@@ -39,4 +39,25 @@ document.addEventListener("DOMContentLoaded", function (event) {
         updateTextTerminal()
     }, 5500);
 
+    // === START HERO ANIMATION ON SCROLL
+    const heroElement = document.getElementById("hero");
+    const heroLeftElement = document.getElementsByClassName("left-hero")?.[0];
+    const heroRightH1 = document.querySelector("#hero section.right-hero h1");
+    const heroRightP = document.querySelector("#hero section.right-hero p");
+    const heroRightA = document.querySelector("#hero section.right-hero a");
+    window.addEventListener("scroll", (event) => {
+        const scrollPosition = window.scrollY;
+        console.log(scrollPosition);
+        // animated terminal (left hero section)
+        if (scrollPosition <= heroElement.offsetHeight) {
+            if (scrollPosition <= 180) {
+                heroLeftElement.style.transform = `rotate3d(0, 1, 0, ${scrollPosition <= 90 ? scrollPosition : 90}deg)`;
+            }
+        }
+        // animated right hero section H1 / P / A
+        scrollPosition > (heroElement.offsetHeight / 6) ? heroRightH1.classList.add("fade-out-right") : heroRightH1.classList.remove("fade-out-right")
+        scrollPosition > ((heroElement.offsetHeight / 6) + 100) ? heroRightP.classList.add("fade-out-right") : heroRightP.classList.remove("fade-out-right")
+        scrollPosition > ((heroElement.offsetHeight / 6) + 150) ? heroRightA.classList.add("fade-out-right") : heroRightA.classList.remove("fade-out-right")
+    });
+
 });

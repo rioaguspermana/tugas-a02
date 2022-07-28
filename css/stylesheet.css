@@ -74,6 +74,11 @@ a {
   }
 }
 
+.fade-out-right {
+  transform: translate(160px, 0);
+  opacity: 0 !important;
+}
+
 /* === ANIMATION STYLE END === */
 
 /*
@@ -170,6 +175,7 @@ header {
   background-repeat: no-repeat;
   background-position: right center;
   display: flex;
+  overflow-x: hidden;
 }
 
 #hero section {
@@ -184,6 +190,10 @@ header {
 #hero section .terminal {
   width: 80%;
   height: 50%;
+}
+
+#hero section.left-hero {
+  transition: all 0.2s linear;
 }
 
 #hero section.left-hero .command-control {
@@ -252,11 +262,15 @@ header {
 #hero section.right-hero h1 {
   font-size: 76px;
   margin-bottom: 0;
+  opacity: 1;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 #hero section.right-hero p {
   font-size: 36px;
   margin-bottom: 20px;
+  opacity: 1;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 #hero section.right-hero .action-button {
@@ -267,6 +281,8 @@ header {
   border: 2px dashed var(--theme-color-primary);
   background-color: var(--theme-color-quaternary);
   margin-bottom: 70px;
+  opacity: 1;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 /* === HERO SECTION END ===*/
