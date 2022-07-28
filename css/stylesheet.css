@@ -11,6 +11,10 @@
 }
 
 /* === GLOBAL STYLE START === */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: var(--theme-font);
