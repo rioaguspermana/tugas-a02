@@ -54,6 +54,7 @@ a {
 .section-container {
   padding-top: var(--nav-height);
   height: 100vh;
+  overflow-x: hidden;
 }
 
 /* === GLOBAL STYLE END === */
@@ -200,7 +201,6 @@ header {
   background-repeat: no-repeat;
   background-position: right center;
   display: flex;
-  overflow-x: hidden;
 }
 
 #hero section {
@@ -349,7 +349,6 @@ header {
   background-size: 200px;
   background-repeat: no-repeat;
   background-position: 10% bottom;
-  overflow-x: hidden;
 }
 
 #form_contact .content-contact .contact-info ol {
