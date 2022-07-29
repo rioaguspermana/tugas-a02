@@ -40,4 +40,20 @@
   }
 
   /* === HERO SECTION END ===*/
+  /* === CONTACT SECTION START ==*/
+  #form_contact .content-contact .contact-info {
+    background-size: 100px;
+  }
+
+  #form_contact .content-contact .contact-info ol {
+    font-size: 14px;
+  }
+
+  #form_contact .content-contact .contact-form .form-group .form-control {
+    width: 100%;
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+
+  /* === CONTACT SECTION END ==*/
 }

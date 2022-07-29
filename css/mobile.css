@@ -130,4 +130,40 @@
   }
 
   /* === HERO SECTION END ===*/
+  /* === CONTACT SECTION START ==*/
+  #form_contact>p {
+    font-size: 16px;
+  }
+
+  #form_contact .content-contact {
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  #form_contact .content-contact .contact-info,
+  #form_contact .content-contact .contact-form {
+    width: 100%;
+  }
+
+  #form_contact .content-contact .contact-info {
+    padding: 0;
+    background-size: 100px;
+    background-position: right bottom;
+  }
+
+  #form_contact .content-contact .contact-info ol {
+    font-size: 14px;
+  }
+
+  #form_contact .content-contact .contact-info ol li {
+    width: 100%;
+  }
+
+  #form_contact .content-contact .contact-form .form-group .form-control {
+    width: 100%;
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+
+  /* === CONTACT SECTION END ==*/
 }
