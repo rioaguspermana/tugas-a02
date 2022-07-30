@@ -548,3 +548,51 @@ header {
 }
 
 /* === FOOTER SECTION END ==*/
+
+/* === ABOUT SECTION START ==*/
+
+
+.about-container {
+  background-color: var(--theme-color-quaternary);
+}
+
+.about-contents {
+  display: flex;
+}
+
+.content-a p:nth-child(1) {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1px;
+}
+
+
+.content-a p:nth-child(3) {
+  font-size: 18px;
+  font-weight: 200;
+  color: rgb(190, 190, 190);
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.content-b {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left {
+  margin-right: 10px;
+}
+
+.left h3 {
+  font-size: 28px;
+}
+
+
+
+
+.content-a h2 {
+  font-size: 40px;
+}
+
+/* === ABOUT SECTION END ==*/
