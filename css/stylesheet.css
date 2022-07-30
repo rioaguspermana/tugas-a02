@@ -513,6 +513,9 @@ header {
 /* === FOOTER SECTION START ==*/
 #footer {
   height: auto;
+  color: var(--theme-color-primary);
+  box-sizing: border-box;
+  border-top: 1px solid var(--theme-color-quinary);
 }
 
 .footer-container {
@@ -543,4 +546,5 @@ header {
 .company-info {
   text-align: center;
 }
+
 /* === FOOTER SECTION END ==*/
