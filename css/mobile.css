@@ -148,6 +148,54 @@
 
   /* === INDUSTRIES SECTION END ===*/
 
+  /* === CLIENT SECTION START ===*/
+  #client>ol {
+    flex-direction: column;
+  }
+
+  #client>ol li {
+    margin: 20px 0;
+  }
+
+  #client>ol li svg {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 10px;
+  }
+
+  /* === CLIENT SECTION END ===*/
+
+  /* === ABOUT SECTION START ==*/
+  .about-contents img {
+    display: none;
+  }
+
+  .about-contents {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .about-contents .main-content .head h2 {
+    font-size: 20px;
+  }
+
+  .about-contents .main-content .head p {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .about-contents .main-content .content-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-contents .main-content .content-list .content-text {
+    margin-right: 0;
+    font-size: 16px;
+  }
+
+  /* === ABOUT SECTION END ==*/
+
   /* === CONTACT SECTION START ==*/
   #form_contact>p {
     font-size: 16px;

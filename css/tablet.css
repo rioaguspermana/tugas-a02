@@ -40,6 +40,28 @@
   }
 
   /* === HERO SECTION END ===*/
+
+  /* === ABOUT SECTION START ==*/
+
+  .about-contents {
+    margin-top: 4px;
+  }
+
+  .about-contents .main-content .head h2 {
+    font-size: 16px;
+  }
+
+  .about-contents .main-content .head p {
+    font-size: 18px;
+  }
+
+  .about-contents .main-content .content-list .content-text {
+    margin-right: 10px;
+    font-size: 12px;
+  }
+
+  /* === ABOUT SECTION END ==*/
+
   /* === CONTACT SECTION START ==*/
   #form_contact .content-contact .contact-info {
     background-size: 100px;

@@ -57,6 +57,30 @@ a {
   overflow-x: hidden;
 }
 
+.bg-circle {
+  position: absolute;
+  filter: blur(100px);
+  opacity: 0.7;
+}
+
+.bg-circle.one {
+  top: 20%;
+  left: 20%;
+  width: 200px;
+  height: 200px;
+  background-color: var(--theme-color-tertiary);
+  z-index: -1;
+}
+
+.bg-circle.two {
+  bottom: 10%;
+  right: 10%;
+  width: 300px;
+  height: 300px;
+  background-color: var(--theme-color-tertiary);
+  z-index: -1;
+}
+
 /* === GLOBAL STYLE END === */
 
 /* === ANIMATION STYLE START === */
@@ -312,31 +336,6 @@ header {
 /* === HERO SECTION END ===*/
 
 /* === INDUSTRIES SECTION START ===*/
-.bg-circle {
-  position: absolute;
-  filter: blur(100px);
-  opacity: 0.7;
-}
-
-.bg-circle.one {
-  top: 20%;
-  left: 20%;
-  width: 200px;
-  height: 200px;
-  background-color: var(--theme-color-tertiary);
-  z-index: -1;
-}
-
-
-.bg-circle.two {
-  bottom: 10%;
-  right: 10%;
-  width: 300px;
-  height: 300px;
-  background-color: var(--theme-color-tertiary);
-  z-index: -1;
-}
-
 #industries {
   color: var(--theme-color-primary);
   background-color: rgb(223 246 255 / 50%);
@@ -420,6 +419,102 @@ header {
 }
 
 /* === INDUSTRIES SECTION END ===*/
+
+/* === CLIENT SECTION START ===*/
+#client {
+  color: var(--theme-color-primary);
+  background-image: url("/image/golang_a02_lightgray_color.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+}
+
+#client h1 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#client>p {
+  text-align: center;
+  margin-top: 0;
+  font-size: 24px;
+}
+
+#client>ol {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+#client>ol li {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#client>ol li svg {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+/* === CLIENT SECTION START ===*/
+
+/* === ABOUT SECTION START ==*/
+#about {
+  box-sizing: border-box;
+  border-top: 1px solid var(--theme-color-quinary);
+  border-bottom: 1px solid var(--theme-color-quinary);
+  background-color: rgb(223 246 255 / 50%);
+  position: relative;
+  color: var(--theme-color-primary);
+}
+
+#about h1 {
+  text-align: center;
+}
+
+.about-contents {
+  display: flex;
+  margin-top: 80px;
+  align-items: center;
+}
+
+.about-contents img {
+  opacity: 0.6;
+  width: 40%;
+}
+
+.about-contents .main-content .head h2 {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.about-contents .main-content .head p {
+  font-size: 28px;
+  margin-top: 0;
+  max-width: 60%;
+}
+
+.about-contents .main-content .content-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-contents .main-content .content-list .content-text {
+  margin-right: 30px;
+  font-size: 20px;
+}
+
+/* === ABOUT SECTION END ==*/
 
 /* === CONTACT SECTION START ==*/
 #form_contact h1 {
@@ -507,7 +602,6 @@ header {
   background-color: var(--theme-color-primary);
 }
 
-
 /* === CONTACT SECTION END ==*/
 
 /* === FOOTER SECTION START ==*/
@@ -548,51 +642,3 @@ header {
 }
 
 /* === FOOTER SECTION END ==*/
-
-/* === ABOUT SECTION START ==*/
-
-
-.about-container {
-  background-color: var(--theme-color-quaternary);
-}
-
-.about-contents {
-  display: flex;
-}
-
-.content-a p:nth-child(1) {
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 1px;
-}
-
-
-.content-a p:nth-child(3) {
-  font-size: 18px;
-  font-weight: 200;
-  color: rgb(190, 190, 190);
-  margin-top: -20px;
-  margin-bottom: 20px;
-}
-
-.content-b {
-  display: flex;
-  justify-content: space-around;
-}
-
-.left {
-  margin-right: 10px;
-}
-
-.left h3 {
-  font-size: 28px;
-}
-
-
-
-
-.content-a h2 {
-  font-size: 40px;
-}
-
-/* === ABOUT SECTION END ==*/
