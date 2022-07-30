@@ -5,4 +5,4 @@
 ✅  client --> [Sarirotul Latifah](https://github.com/SariFah09)\
 ✅  about --> [Riyan](https://github.com/riyansasaja)\
 ✅  form contact --> [Usamah](https://github.com/jalzae)\
-✅  footer --> Yulian Deni Adhitama
+✅  footer --> [Yulian Deni Adhitama](https://github.com/deniadhi)
