@@ -166,4 +166,18 @@
   }
 
   /* === CONTACT SECTION END ==*/
+
+  /* === FOOTER SECTION START ==*/
+  .footer-container .content-container {
+    flex-direction: column;
+  }
+
+  .footer-container .content-container div {
+    text-align: center;
+  }
+
+  .footer-container .company {
+    flex-basis: 0;
+  }
+    /* === FOOTER SECTION END ==*/
 }
