@@ -39,6 +39,39 @@ document.addEventListener("DOMContentLoaded", function (event) {
         updateTextTerminal()
     }, 5500);
 
+    // === START INDUSTRIES SCROLL CONTROL
+    const industriesScrollElement = document.getElementsByClassName("industries-scroll")?.[0];
+    const industriesScrollButtonLeft = document.getElementsByClassName("button-slide-left")?.[0];
+    const industriesScrollButtonRight = document.getElementsByClassName("button-slide-right")?.[0];
+    const totalList = document.getElementsByClassName("cover").length;
+    const industriesScrollWidth = industriesScrollElement.scrollWidth;
+    const industriesVisibleWidth = industriesScrollElement.clientWidth;
+    const scrollLimit = industriesScrollWidth - industriesVisibleWidth;
+    const widthListElement = industriesScrollWidth / totalList;
+    let industriesScrollPosition = industriesScrollElement.scrollLeft;
+    industriesScrollButtonLeft.addEventListener("click", function () {
+        if (industriesScrollPosition > 0) {
+            industriesScrollPosition -= widthListElement;
+            industriesScrollPosition = industriesScrollPosition < 0 ? 0 : industriesScrollPosition;
+            industriesScrollElement.scrollTo(industriesScrollPosition, 0);
+        }
+        if (industriesScrollPosition === 0) {
+            industriesScrollButtonLeft.style.visibility = "hidden";
+        }
+        industriesScrollButtonRight.style.visibility = "visible";
+    });
+    industriesScrollButtonRight.addEventListener("click", function () {
+        if (industriesScrollPosition < scrollLimit) {
+            industriesScrollPosition += widthListElement;
+            industriesScrollPosition = industriesScrollPosition > scrollLimit ? scrollLimit : industriesScrollPosition;
+            industriesScrollElement.scrollTo(industriesScrollPosition, 0);
+        }
+        if (industriesScrollPosition === scrollLimit) {
+            industriesScrollButtonRight.style.visibility = "hidden";
+        }
+        industriesScrollButtonLeft.style.visibility = "visible";
+    });
+
     // === START ANIMATION ON SCROLL
     // hero el
     const heroElement = document.getElementById("hero");
@@ -66,8 +99,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         // start element animation on scroll for contact
         if ((window.scrollY - contactElement.offsetTop) > -500) {
-            (window.scrollY - contactElement.offsetTop) > (contactElement.offsetHeight / 2) || (window.scrollY - contactElement.offsetTop) < -280 ? contactElementInfo.classList.add("fade-out-right") : contactElementInfo.classList.remove("fade-out-right");
-            (window.scrollY - contactElement.offsetTop) > ((contactElement.offsetHeight / 2) + 100) || (window.scrollY - contactElement.offsetTop) < -380 ? contactElementForm.classList.add("fade-out-right") : contactElementForm.classList.remove("fade-out-right");
+            (window.scrollY - contactElement.offsetTop) > ((contactElement.offsetHeight / 2) + 200) || (window.scrollY - contactElement.offsetTop) < -420 ? contactElementInfo.classList.add("fade-out-right") : contactElementInfo.classList.remove("fade-out-right");
+            (window.scrollY - contactElement.offsetTop) > (contactElement.offsetHeight / 2) || (window.scrollY - contactElement.offsetTop) < -280 ? contactElementForm.classList.add("fade-out-right") : contactElementForm.classList.remove("fade-out-right");
         }
     });
     // === END ANIMATION ON SCROLL

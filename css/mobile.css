@@ -130,6 +130,24 @@
   }
 
   /* === HERO SECTION END ===*/
+
+  /* === INDUSTRIES SECTION START ===*/
+  .button-slide-left,
+  .button-slide-right {
+    display: none;
+  }
+
+  .industry-list ol {
+    overflow: scroll;
+  }
+
+  .cover {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* === INDUSTRIES SECTION END ===*/
+
   /* === CONTACT SECTION START ==*/
   #form_contact>p {
     font-size: 16px;
