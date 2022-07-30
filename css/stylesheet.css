@@ -220,7 +220,7 @@ header {
 
 /* === HERO SECTION START ===*/
 #hero {
-  background-image: url("image/golang_a02_lightgray_color.svg");
+  background-image: url("image/golang_a02_lightgray.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right center;
@@ -423,7 +423,7 @@ header {
 /* === CLIENT SECTION START ===*/
 #client {
   color: var(--theme-color-primary);
-  background-image: url("image/golang_a02_lightgray_color.svg");
+  background-image: url("image/golang_a02_lightgray.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
