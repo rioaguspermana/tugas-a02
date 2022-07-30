@@ -220,7 +220,7 @@ header {
 
 /* === HERO SECTION START ===*/
 #hero {
-  background-image: url("/image/golang_a02_lightgray_color.svg");
+  background-image: url("image/golang_a02_lightgray_color.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right center;
@@ -423,7 +423,7 @@ header {
 /* === CLIENT SECTION START ===*/
 #client {
   color: var(--theme-color-primary);
-  background-image: url("/image/golang_a02_lightgray_color.svg");
+  background-image: url("image/golang_a02_lightgray_color.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -550,7 +550,7 @@ header {
 
 #form_contact .content-contact .contact-info {
   padding: 0 40px;
-  background-image: url("/image/undraw_my_location_re_r52x.svg");
+  background-image: url("image/undraw_my_location_re_r52x.svg");
   background-size: 200px;
   background-repeat: no-repeat;
   background-position: 10% bottom;
